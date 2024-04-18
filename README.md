@@ -1,6 +1,6 @@
 Image captioning program with CTC + Mask-Predict.
 
-We carried out a machine learning and inference with CTC amd Mask-Predict image captioning.
+We carried out a machine learning and inference with CTC and Mask-Predict image captioning.
 
 ## Dataset
 
