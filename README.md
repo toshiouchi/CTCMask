@@ -8,13 +8,13 @@ Dataset train2017 of cocodataset was used. 90 % of train2017 was used for train 
 
 ## Improvements from usual Mask-Predict
 
-For using CTCLoss, two improvements are carried out. One is target input of Transforemer Decoder ( captions ) is upsampled to twice the length in the sequence length direction.  One is improvment of inference function, l-th outputs of Transformer Decoder is twice length in the suqeunce length direction, therefore it is not used for input of l+1-th Transformer Decoder target input. So, outputs of l-th Transformer Decoder is decoded with CTC decode method into number sentence and softmax probabilities. With this probablities, l-th decoded output number sentence is masked, and input of l+1-th Transformer Decoder is made.
+For using CTCLoss, two improvements are carried out. One is that target input of Transforemer Decoder ( captions ) is upsampled to twice the length in the sequence length direction.  One is an improvment of inference function, l-th outputs of Transformer Decoder is twice length in the suqeunce length direction of captions, therefore it is not used for input of l+1-th Transformer Decoder target input. So, outputs of l-th Transformer Decoder is decoded with CTC decode method into number sentence and softmax probabilities. With this probablities, l-th decoded number sentence is masked, and input of l+1-th Transformer Decoder is made.
 
 ## Learning curve
 
 loss = loss0 + loss1
 
-Loss0 is non-masked CTCLoss of model outputs and targets. loss1 is MSELoss of predicted length of captions and target lengths.
+Loss0 is non-masked CTCLoss of model outputs and targets. Loss1 is MSELoss of predicted length of captions and target lengths.
 
 ### Loss0
 
