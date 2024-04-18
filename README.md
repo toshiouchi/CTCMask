@@ -4,7 +4,7 @@ We carried out a machine learning and inference with CTC and Mask-Predict image 
 
 ## Dataset
 
-Dataset train2017 of cocodataset was used.
+Dataset train2017 of cocodataset was used. 90 % of train2017 was used for train dataset and 10 % was used for validation dataset.
 
 ## Improvements from usual Mask-Predict
 
