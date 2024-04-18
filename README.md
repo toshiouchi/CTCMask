@@ -8,7 +8,7 @@ Dataset train2017 of cocodataset was used.
 
 ## Improvements from usual Mask-Predict
 
-For using CTCLoss, two improvements are carried out. One is target input of Transforemer Decoder ( captions ) is upsampled to twice the length in the sequence length direction.  One is improvments of inference function, l-th outputs of Transformer Decoder is twice length in the suqeunce length direction, therefore it is not used for input of l+1-th Transformer Decoder target input. So, outputs of l-th Transformer Decoder is decode with CTC decode method into number sentence and softmax probability. With this probablitity, l-th decoded output number sentence is masked, and input of l+1-th Transformer Decoder is made.
+For using CTCLoss, two improvements are carried out. One is target input of Transforemer Decoder ( captions ) is upsampled to twice the length in the sequence length direction.  One is improvments of inference function, l-th outputs of Transformer Decoder is twice length in the suqeunce length direction, therefore it is not used for input of l+1-th Transformer Decoder target input. So, outputs of l-th Transformer Decoder is decoded with CTC decode method into number sentence and softmax probabilities. With this probablities, l-th decoded output number sentence is masked, and input of l+1-th Transformer Decoder is made.
 
 ## Learning curve
 
