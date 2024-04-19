@@ -110,12 +110,13 @@ Loss0 is non-masked CTCLoss of model outputs and targets. Loss1 is MSELoss of pr
 
 &lt;start&gt; a zebra standing on top of a green field in a grass &lt;end&gt;
 
-##Link
-###Transformer with downsampling
+## Link
+
+### Transformer with downsampling
 
 https://github.com/toshiouchi/non_autoregressive_transformer_image_captioning/tree/main/6_5_myoriginal_transformer_captioning
 
-###Only Mask-Predict
+### Only Mask-Predict
 
 https://github.com/toshiouchi/ImageCaptioningMaskPredict
 
